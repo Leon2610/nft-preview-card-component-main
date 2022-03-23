@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VerydarkblueMainBG: hsl(217, 54%, 11%);
+  --VerydarkblueCardBG: hsl(216, 50%, 16%);
+  --Verydarkblueline: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--VerydarkblueMainBG);
+}
+
+main {
+  width: 22rem;
+  height: 37.2rem;
+  background-color: var(--VerydarkblueCardBG);
+  border-radius: 1rem;
+  box-shadow: -0.125rem 1.75rem 0.625rem 1.063rem rgb(12, 23, 41);
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+main .container .op:hover {
+  opacity: 0.5;
+}
+
+main .container .op {
+  position: absolute;
+  width: 19.063rem;
+  height: 19.063rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cyan);
+  opacity: 0;
+}
+
+main .equilibrium {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+main .text h1 {
+  color: var(--White);
+  font-weight: 600;
+  font-size: 22px;
+  margin: 1.3rem 1.5rem;
+  cursor: pointer;
+}
+
+main .text h1:hover {
+  color: var(--Cyan);
+}
+
+main .text p {
+  color: var(--Softblue);
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0 1.6rem;
+  line-height: 1.5625rem;
+}
+
+main .ETH {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 1.6rem;
+}
+
+main .ETH .price {
+  display: flex;
+  gap: 0.4rem;
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+main .ETH .time {
+  display: flex;
+  gap: 0.6rem;
+  font-weight: 400;
+  color: var(--Softblue);
+}
+
+main .autor {
+  display: flex;
+  gap: 1rem;
+  margin: 0 1.6rem;
+  padding: 1rem 0;
+  color: var(--Softblue);
+  align-items: center;
+  border-top: 1px solid var(--Verydarkblueline);
+  font-weight: 300;
+}
+
+main .autor img {
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+main .autor span {
+  color: var(--White);
+  cursor: pointer;
+}
+
+main .autor span:hover {
+  color: var(--Cyan);
+}
